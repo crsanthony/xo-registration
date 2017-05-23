@@ -1,7 +1,7 @@
 import { TOGGLE_MODAL, SUBMIT_FORM } from './constants/ActionTypes';
 
 const initialState = {
-  modalOpen: false,
+  modalOpen: true,
   registered: false,
 }
 
@@ -13,7 +13,10 @@ export default function registration(state = initialState, action) {
        modalOpen: !state.modalOpen
      }
     case SUBMIT_FORM:
-      return state
+      return {
+        ...state,
+        registered: true
+      }
     default:
       return state
   }

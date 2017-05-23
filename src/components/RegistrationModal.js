@@ -3,28 +3,17 @@ import Modal from 'react-modal';
 import './RegistrationModal.css';
 
 class RegistrationModal extends Component {
-
-  constructor(props) {
-    super(props);
-    this.state = {
-      modalOpen: true
-    }
-  }
-
-  toggleModal = () => {
-    const open = !this.state.modalOpen;
-    this.setState({modalOpen: open});
-  }
-
   render() {
     return (
-      <Modal isOpen={this.state.modalOpen} className="modal">
-        <div className="closeBtn" onClick={this.toggleModal}>x</div>
-        <form className="formContainer">
-          <input className="formField" type="text" placeholder="email" />
-          <input className="formField" type="password" placeholder="password" />
-          <button className="submitBtn">register</button>
-        </form>
+      <Modal isOpen={this.props.isOpen} className="modal">
+        <div className="closeBtn" onClick={this.props.toggleModal}>x</div>
+        <div className="formContainer">
+          <form action={this.props.submitFrom} id="regForm">
+            <input className="formField" type="text" placeholder="email" />
+            <input className="formField" type="password" placeholder="password" />
+          </form>
+          <button type="submit" form="regForm" className="submitBtn">register</button>
+        </div>
       </Modal>
     );
   }
