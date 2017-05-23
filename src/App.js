@@ -19,6 +19,11 @@ const App = ({modalOpen, registered, actions}) => (
     </div>
 )
 
+App.propTypes = {
+  registered: PropTypes.bool.isRequired,
+  modalOpen: PropTypes.bool.isRequired
+}
+
 const mapStateToProps = state => ({
   modalOpen: state.modalOpen,
   registered: state.registered
