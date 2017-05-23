@@ -1,6 +1,6 @@
 import { TOGGLE_MODAL, SUBMIT_FORM } from '../constants/ActionTypes';
 
-const initialState {
+const initialState = {
   modalOpen: false,
   registered: false,
 }
