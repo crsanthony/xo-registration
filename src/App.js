@@ -15,7 +15,7 @@ class App extends Component {
         <p className="App-intro">
           <button>Register</button>
         </p>
-        <Modal isOpen={true}>
+        <Modal isOpen={true} className="modal">
           <span>hi there</span>
         </Modal>
       </div>
