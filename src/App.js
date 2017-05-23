@@ -28,4 +28,4 @@ const mapDispatchToProps = dispatch => ({
   actions: bindActionCreators(Actions, dispatch)
 })
 
-export default App;
+export default connect(mapStateToProps, mapDispatchToProps)(App);
