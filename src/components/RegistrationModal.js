@@ -20,7 +20,11 @@ class RegistrationModal extends Component {
     return (
       <Modal isOpen={this.state.modalOpen} className="modal">
         <div className="closeBtn" onClick={this.toggleModal}>x</div>
-        <span>hi there</span>
+        <form className="formContainer">
+          <input className="formField" type="text" placeholder="email" />
+          <input className="formField" type="password" placeholder="password" />
+          <button className="submitBtn">register</button>
+        </form>
       </Modal>
     );
   }
