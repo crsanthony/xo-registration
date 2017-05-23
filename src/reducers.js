@@ -1,18 +1,20 @@
-import { TOGGLE_MODAL, SUBMIT_FORM } from '../constants/ActionTypes';
+import { TOGGLE_MODAL, SUBMIT_FORM } from './constants/ActionTypes';
 
 const initialState = {
   modalOpen: false,
   registered: false,
 }
 
-export default function registration(state = initialsState, action) {
+export default function registration(state = initialState, action) {
   switch(action.type) {
     case TOGGLE_MODAL:
-     return (
-       ...state
+     return {
+       ...state,
        modalOpen: !state.modalOpen
-     )
+     }
     case SUBMIT_FORM:
+      return state
+    default:
       return state
   }
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RegistrationModal from './components/RegistrationModal';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
+import PropTypes from 'prop-types'
 import logo from './assets/logo.png';
 import './App.css';
 import * as Actions from './actions';
@@ -15,7 +16,7 @@ const App = ({modalOpen, registered, actions}) => (
       <p className="App-intro">
         <button onClick={actions.toggleModal}>Register</button>
       </p>
-      <RegistrationModal isOpen={props.modalOpen} actions={actions} />
+      <RegistrationModal isOpen={modalOpen} actions={actions} />
     </div>
 )
 
