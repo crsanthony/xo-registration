@@ -4,9 +4,10 @@ import './RegistrationModal.css';
 
 class RegistrationModal extends Component {
   render() {
+    let { toggleModal } = this.props.actions;
     return (
       <Modal isOpen={this.props.isOpen} className="modal">
-        <div className="closeBtn" onClick={this.props.toggleModal}>x</div>
+        <div className="closeBtn" onClick={toggleModal}>x</div>
         <div className="formContainer">
           <form action={this.props.submitFrom} id="regForm">
             <input className="formField" type="text" placeholder="email" />

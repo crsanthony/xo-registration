@@ -1,4 +1,5 @@
-import * as types from '../constants/ActionTypes';
+import { TOGGLE_MODAL, SUBMIT_FORM } from '../constants/ActionTypes';
 
-export const toggleModal = () => ({ type: types.TOGGLE_MODAL });
-export const submitForm = data => ({ type: types.SUMBIT_FORM, data });
+console.log(TOGGLE_MODAL);
+export const toggleModal = () => ({ type: TOGGLE_MODAL });
+export const submitForm = data => ({ type: SUBMIT_FORM, data });
