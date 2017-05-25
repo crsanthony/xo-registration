@@ -38,8 +38,8 @@ App.propTypes = {
 }
 
 const mapStateToProps = state => ({
-  modalOpen: state.modalOpen,
-  registered: state.registered
+  modalOpen: state.registration.modalOpen,
+  registered: state.registration.registered
 });
 
 const mapDispatchToProps = dispatch => ({

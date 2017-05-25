@@ -18,7 +18,6 @@ const RegistrationForm = props => {
   let { submitHandler } = props;
   return (
     <form onSubmit={submitHandler} className="form">
-      <div className="fields">
         <Field
           name="email"
           placeholder="email"
@@ -29,7 +28,6 @@ const RegistrationForm = props => {
           placeholder="password"
           type="password"
           component={renderField} />
-      </div>
       <button className="submitBtn" type="submit">Submit</button>
     </form>
   )
