@@ -1,18 +1,20 @@
 import { TOGGLE_MODAL, SUBMIT_FORM } from './constants/ActionTypes';
 
 const initialState = {
-  modalOpen: true,
+  modalOpen: false,
   registered: false,
 }
 
 export default function registration(state = initialState, action) {
   switch(action.type) {
     case TOGGLE_MODAL:
+    console.log("toggle modal");
      return {
        ...state,
        modalOpen: !state.modalOpen
      }
     case SUBMIT_FORM:
+      console.log("submit form");
       return {
         ...state,
         registered: true

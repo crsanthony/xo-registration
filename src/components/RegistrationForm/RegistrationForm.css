@@ -1,0 +1,23 @@
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.fields {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.formField {
+  padding: 10px;
+  margin: 0 0 5px 0;
+  border: none;
+  border-radius: 8px;
+}
+
+.submitBtn {
+  line-height: 30px;
+  padding: 8px;
+  border-radius: 8px;
+}
