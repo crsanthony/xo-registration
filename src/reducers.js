@@ -8,7 +8,6 @@ const initialState = {
 export default function registration(state = initialState, action) {
   switch(action.type) {
     case TOGGLE_MODAL:
-    console.log("toggle modal");
      return {
        ...state,
        modalOpen: !state.modalOpen
