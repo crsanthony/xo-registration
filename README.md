@@ -1,7 +1,7 @@
 ## A brand new registration workflow for XO
 This is the new registration app for the XO group.  We hope you enjoy it!
 
-##Setup
+## Setup
 `git clone https://github.com/crsanthony/xo-registration`
 `cd xo-registration`
 `npm install`
