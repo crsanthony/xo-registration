@@ -12,8 +12,9 @@ const email = value =>
 
 const renderField = ({ input, type, placeholder, meta: { touched, error, warning } }) => (
   <div className="formFieldContainer">
+
     <input {...input} placeholder={placeholder} type={type} className="formField" />
-    {touched && ((error && <span className="errorMsg">{error}</span>))}
+    {touched && error ? <span className="errorMsg">{error}</span> : <span className="errorMsg"></span>}
   </div>
 )
 

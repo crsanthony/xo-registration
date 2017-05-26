@@ -6,9 +6,6 @@
 
 .fields {
   width: 80%;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .formField {
@@ -38,6 +35,4 @@
   height: 60px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
