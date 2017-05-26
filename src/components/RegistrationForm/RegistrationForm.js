@@ -15,8 +15,8 @@ const renderField = ({ input, type, placeholder, meta: { touched, error, warning
 )
 
 const RegistrationForm = props => {
-  let { submitHandler, pristine, form } = props;
-  let formMeta = form[Object.keys(form)[0]]; 
+  let { submitHandler, pristine, formData } = props;
+  let formMeta = formData[Object.keys(formData)[0]]; 
   let syncErrors = formMeta ? formMeta.syncErrors : undefined;
 
   return (

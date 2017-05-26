@@ -5,14 +5,14 @@ import RegistrationForm from '../RegistrationForm/RegistrationForm';
 
 const RegistrationModal = props => {
   let { toggleModal, submitForm  } = props.actions;
-  let { isOpen, form } = props;
+  let { isOpen, formData } = props;
   return (
     <Modal isOpen={isOpen} className="modal" contentLabel="registration">
       <div className="closeBtn" onClick={toggleModal}>x</div>
       <div className="modalContent">
         <h2>Create an account!</h2>
         <div className="formContainer">
-          <RegistrationForm submitHandler={submitForm} form={form} />
+          <RegistrationForm submitHandler={submitForm} formData={formData} />
         </div>
       </div>
     </Modal>
