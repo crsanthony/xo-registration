@@ -21,7 +21,6 @@ App.renderConfirmation = () => {
 }
 
 App.renderDefault = (modalOpen, actions, form) => {
-  console.log("FORM => ", form);
   return (
     <div>
       <h2>Ready to take our relationship to the next level?</h2>
