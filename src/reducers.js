@@ -13,7 +13,6 @@ export default function registration(state = initialState, action) {
        modalOpen: !state.modalOpen
      }
     case SUBMIT_FORM:
-      console.log("submit form");
       return {
         ...state,
         registered: true
