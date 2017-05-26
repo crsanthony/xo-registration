@@ -15,7 +15,10 @@ const renderField = ({ input, type, placeholder, meta: { touched, error, warning
 )
 
 const RegistrationForm = props => {
-  let { submitHandler } = props;
+  let { submitHandler, pristine, form } = props;
+  let formMeta = form[Object.keys(form)[0]]; 
+  let syncErrors = formMeta ? formMeta.syncErrors : undefined;
+
   return (
     <form onSubmit={submitHandler} className="form">
       <div className="fields">
@@ -32,7 +35,7 @@ const RegistrationForm = props => {
           validate={[required, password]}
           component={renderField} />
       </div>
-      <button className="submitBtn" type="submit">Submit</button>
+      <button className="submitBtn" disabled={pristine || syncErrors} type="submit">Submit</button>
     </form>
   )
 }
