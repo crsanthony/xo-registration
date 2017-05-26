@@ -11,3 +11,9 @@ This is the new registration app for the XO group.  We hope you enjoy it!
 
 ## Run Tests
 - `npm test`
+
+## Things used to make this
+- `redux` http://redux.js.org/
+- `react` https://facebook.github.io/react/
+- `react-create-app` https://github.com/facebookincubator/create-react-app
+- `redux-form` http://redux-form.com/6.7.0/
