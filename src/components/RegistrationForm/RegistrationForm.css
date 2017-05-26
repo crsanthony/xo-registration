@@ -21,3 +21,14 @@
   padding: 8px;
   border-radius: 8px;
 }
+
+.errorMsg {
+  color: red;
+  font-size: 10px;
+}
+
+.formFieldContainer {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+}
